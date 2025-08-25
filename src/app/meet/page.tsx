@@ -85,7 +85,7 @@ function Page() {
 
   async function handleMeeting() {
     if (callActive) {
-      vapi.stop();
+      await vapi.stop();
       return;
     }
 
@@ -113,7 +113,7 @@ function Page() {
       sessionStorage.setItem("transcript", JSON.stringify(transcript));
       router.push("/feedback");
     }
-  }, [callEnd]);
+  }, [callEnd, transcript]);
 
   return (
     <div className="w-full h-[100vh] p-5">
