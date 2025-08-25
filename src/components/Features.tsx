@@ -24,16 +24,16 @@ function Features() {
   ];
 
   return (
-    <section id="features" className="w-full">
+    <section id="features" className="w-full px-5">
       <p className="w-fit flex gap-2 justify-center items-center border rounded-full p-3 mx-auto">
         <span className="size-2 rounded-full bg-violet-700 inline-block" />
         <span className="text-[14px] font-bold">Features</span>
       </p>
-      <div className="w-full flex gap-8 justify-center items-center mt-8">
+      <div className="w-full flex flex-col lg:flex-row gap-8 justify-center items-center mt-8">
         {features.map((feature, i) => (
           <div
             key={i}
-            className="w-[30%] flex flex-col gap-4 p-5 border rounded-4xl"
+            className="w-full md:w-[50%] lg:w-[30%] flex flex-col gap-4 p-5 border rounded-4xl"
           >
             <div className="size-12">
               <Image

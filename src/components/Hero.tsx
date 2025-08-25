@@ -10,10 +10,13 @@ function Hero() {
           <div className="text-2xl font-bold text-violet-700">Mitra</div>
         </Link>
         <div className="flex gap-10 items-center">
-          <Link className="cursor-pointer" href="#features">
+          <Link
+            className="cursor-pointer hidden md:inline-block"
+            href="#features"
+          >
             <p>Features</p>
           </Link>
-          <Link className="cursor-pointer" href="#about">
+          <Link className="cursor-pointer hidden md:inline-block" href="#about">
             <p>About</p>
           </Link>
 
@@ -31,10 +34,10 @@ function Hero() {
             Improve your spoken English
           </span>
         </p>
-        <h1 className="text-[64px] leading-[110%] text-center flex flex-col">
+        <h1 className="text-4xl lg:text-[64px] leading-[110%] text-center flex flex-col">
           <span className="flex justify-center items-center gap-[14px]">
             Your friendly <span className="text-violet-700">AI</span>
-            <span className="w-fit h-[60px] inline-block">
+            <span className="w-fit h-[60px] md:inline-block hidden">
               <Image
                 className="w-full h-full object-fill"
                 src="/mitra.svg"
@@ -48,7 +51,7 @@ function Hero() {
             <span className="text-violet-700">Mentor</span> for better English
           </span>
         </h1>
-        <p className="text-lg text-center w-[60%]">
+        <p className="text-lg text-center w-full md:w-[60%]">
           Have real conversations, get instant feedback, and boost your
           confidence with your personal AI English coach
         </p>

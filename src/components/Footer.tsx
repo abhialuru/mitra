@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="w-full pt-[104px]">
       <div className="flex flex-col gap-8 justify-center items-center">
-        <h1 className="text-3xl font-bold w-fit">
+        <h1 className="text-3xl font-bold w-fit text-center mx-auto">
           Start Your First Conversation Today
         </h1>
         <button className="w-fit text-lg font-bold bg-violet-700 text-white rounded-xl p-3">

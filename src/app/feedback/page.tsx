@@ -82,7 +82,7 @@ function Page() {
         <Link className="cursor-pointer" href="/">
           <div className="text-violet-700 text-2xl font-bold">Mitra</div>
         </Link>
-        <div className="flex gap-8">
+        <div className="flex gap-2 md:gap-8">
           <Link className="cursor-pointer" href="/meet">
             <button className="w-fit p-3 rounded-lg bg-violet-700 text-white cursor-pointer">
               Start a conversation

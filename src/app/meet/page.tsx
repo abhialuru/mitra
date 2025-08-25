@@ -124,14 +124,14 @@ function Page() {
         </div>
       </Link>
       {!callActive && (
-        <div className="text-black p-2 px-5 rounded-full bg-white flex justify-center items-center gap-2 absolute  top-10 right-10 z-10">
+        <div className="hidden text-black p-2 px-5 rounded-full bg-white md:flex justify-center items-center gap-2 absolute  top-10 right-10 z-10">
           Calltime : around 5 Mins
         </div>
       )}
       <div className="w-full h-full bg-[#1a1a1a] rounded-3xl flex justify-center items-center relative">
-        <div className="size-[14vw] rounded-full relative flex justify-center items-center">
+        <div className="size-[45vw] md:size-[25vw] lg:size-[14vw] rounded-full relative flex justify-center items-center">
           <div
-            className={`absolute size-[10vw] bg-gray-400 rounded-full z-0 ${
+            className={`absolute size-[40vw] md:size-[20vw] lg:size-[10vw] bg-gray-400 rounded-full z-0 ${
               isSpeaking && "animate-ping"
             }`}
           ></div>
